@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrimart Testing Capstone Project</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --primary-light: #60ad5e;
+            --primary-dark: #005005;
+            --secondary-color: #f1f8e9;
+            --text-color: #333333;
+            --light-text: #ffffff;
+            --bg-color: #ffffff;
+            --section-bg: #f9fbe7;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            color: var(--light-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            padding: 6rem 2rem;
+            min-height: 60vh;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-dark);
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Hero */
+        #hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #dcedc8 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            padding-top: 5rem;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            animation: fadeInDown 1s ease-out;
+            max-width: 900px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            color: #555;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            animation: fadeInUp 1s ease-out 0.3s backwards;
+        }
+
+        .btn {
+            padding: 0.8rem 2.5rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            box-shadow: 0 4px 6px rgba(46, 125, 50, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(46, 125, 50, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            transform: translateY(-2px);
+        }
+
+        /* Overview */
+        #overview {
+            background-color: var(--bg-color);
+        }
+        
+        .overview-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+
+        .overview-card {
+            background-color: var(--card-bg);
+            padding: 2.5rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+            transition: transform 0.3s;
+        }
+        
+        .overview-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .overview-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .overview-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+
+        /* Objectives */
+        #objectives {
+            background-color: var(--section-bg);
+        }
+
+        .objectives-list {
+            list-style: none;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .objectives-list li {
+            background: white;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem 2rem;
+            border-left: 6px solid var(--primary-color);
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .objectives-list li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .check-icon {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        /* Methodology */
+        #methodology {
+            background-color: var(--bg-color);
+        }
+
+        .timeline-container {
+            padding: 2rem 0;
+            overflow-x: auto;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            min-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            right: 5%;
+            height: 4px;
+            background: #e0e0e0;
+            z-index: 1;
+            transform: translateY(-50%);
+        }
+        
+        .timeline-progress {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            width: 90%;
+            height: 4px;
+            background: var(--primary-color);
+            z-index: 1;
+            transform: translateY(-50%);
+        }
+
+        .step {
+            background: var(--card-bg);
+            border: 4px solid var(--primary-color);
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 2;
+            font-weight: bold;
+            padding: 1rem;
+            font-size: 1rem;
+            color: var(--primary-dark);
+            box-shadow: 0 0 0 6px white, 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .step:hover {
+            transform: scale(1.1);
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .tools-section {
+            text-align: center;
+            margin-top: 5rem;
+        }
+        
+        .tools-section h3 {
+            font-size: 1.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 2rem;
+        }
+
+        .tools-grid {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tool-badge {
+            background: white;
+            color: var(--primary-dark);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+        
+        .tool-badge:hover {
+            background: var(--primary-light);
+            color: white;
+            border-color: var(--primary-light);
+        }
+
+        /* Results */
+        #results {
+            background-color: var(--section-bg);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .metric-card {
+            background: var(--card-bg);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .metric-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-label {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .results-table-container {
+            overflow-x: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #fcfcfc;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .status-pass { background-color: #e8f5e9; color: #2e7d32; }
+        .status-fail { background-color: #ffebee; color: #c62828; }
+        .status-partial { background-color: #fff8e1; color: #f57f17; }
+
+        /* Conclusion */
+        #conclusion {
+            background-color: var(--bg-color);
+        }
+
+        .conclusion-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+
+        .conclusion-box {
+            background: var(--section-bg);
+            padding: 2.5rem;
+            border-radius: 10px;
+            border-top: 5px solid var(--primary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .conclusion-box h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .conclusion-box ul {
+            padding-left: 1.5rem;
+            color: #444;
+        }
+
+        .conclusion-box li {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* Team */
+        #team {
+            background-color: var(--section-bg);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .team-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem auto;
+            box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
+        }
+        
+        .team-name {
+            font-size: 1.3rem;
+            color: var(--text-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .team-role {
+            color: var(--primary-light);
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .conclusion-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            .timeline-container {
+                overflow-x: scroll;
+            }
+            .metrics-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .team-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .metrics-grid, .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 3.8l7.2 14.2H4.8L12 5.8z"/><path d="M11 10h2v5h-2zM11 16h2v2h-2z"/></svg>
+            Agrimart QA
+        </div>
+        <ul class="nav-links">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#team">Team</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1 class="hero-title">Functional and Non-Functional Testing of the Agrimart E-Commerce Website</h1>
+            <p class="hero-subtitle">A comprehensive quality assurance study evaluating the reliability, performance, security, and usability of the agricultural marketplace platform connecting farmers and buyers.</p>
+            <div class="cta-buttons">
+                <a href="#results" class="btn btn-primary">View Results</a>
+                <a href="#overview" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <p class="overview-intro">Agrimart is a vital digital bridge connecting farmers with agricultural buyers. Our capstone project systematically evaluated the platform to ensure a seamless, secure, and robust user experience. The testing scope covered four core pillars:</p>
+            
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-icon">🛒</div>
+                    <h3>Functional Testing</h3>
+                    <p>Validation of critical user workflows including authentication, cart management, checkout processes, and order tracking.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">⚡</div>
+                    <h3>Performance Testing</h3>
+                    <p>Evaluation of page load times, response under peak load, and system stability with simulated concurrent users.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">🔒</div>
+                    <h3>Security Testing</h3>
+                    <p>Analysis of data encryption, SQL injection vulnerabilities, authorization controls, and secure payment processing.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">📱</div>
+                    <h3>Usability & Responsiveness</h3>
+                    <p>Assessment of interface intuitiveness, navigation efficiency, and cross-device mobile compatibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objectives">
+        <div class="container">
+            <h2 class="section-title">Study Objectives</h2>
+            <ul class="objectives-list">
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>Validate Core Transactions:</strong> Ensure seamless execution of the end-to-end purchasing journey from product search to payment confirmation.</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>Identify Performance Bottlenecks:</strong> Measure system responsiveness and determine capacity limits to guarantee uptime during harvest seasons.</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>Assess Security Posture:</strong> Detect and mitigate vulnerabilities to protect sensitive user data and financial transactions.</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>Enhance User Experience:</strong> Evaluate interface clarity and accessibility to ensure the platform is intuitive for diverse user demographics.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology">
+        <div class="container">
+            <h2 class="section-title">Methodology</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="timeline-progress"></div>
+                    <div class="step">Test Planning</div>
+                    <div class="step">Test Case<br>Design</div>
+                    <div class="step">Test Execution</div>
+                    <div class="step">Defect Reporting</div>
+                    <div class="step">Final Report</div>
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <h3>Testing Tools Utilized</h3>
+                <div class="tools-grid">
+                    <div class="tool-badge">🟣 Selenium WebDriver</div>
+                    <div class="tool-badge">🟠 Apache JMeter</div>
+                    <div class="tool-badge">🚀 Postman</div>
+                    <div class="tool-badge">🔵 JIRA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results">
+        <div class="container">
+            <h2 class="section-title">Testing Results</h2>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-number">240</div>
+                    <div class="metric-label">Total Test Cases</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">92%</div>
+                    <div class="metric-label">Overall Pass Rate</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">19</div>
+                    <div class="metric-label">Total Bugs Found</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number" style="color: #c62828;">2</div>
+                    <div class="metric-label">Critical Issues Resolved</div>
+                </div>
+            </div>
+
+            <div class="results-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Test Area</th>
+                            <th>Scope / Module</th>
+                            <th>Coverage</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Functional</td>
+                            <td>User Authentication</td>
+                            <td>Login, Registration, Profiles</td>
+                            <td><span class="status status-pass">Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>Functional</td>
+                            <td>Shopping Cart & Checkout</td>
+                            <td>Cart operations, Orders</td>
+                            <td><span class="status status-partial">Partial Pass (Minor UI bug)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Performance</td>
+                            <td>Load Time Analysis</td>
+                            <td>Homepage, Product Listing</td>
+                            <td><span class="status status-pass">Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>Performance</td>
+                            <td>Stress Testing</td>
+                            <td>Concurrent Users Simulation</td>
+                            <td><span class="status status-fail">Fail (Bottleneck at Search DB)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Security</td>
+                            <td>Data Protection</td>
+                            <td>SQL Injection, Auth Controls</td>
+                            <td><span class="status status-pass">Pass</span></td>
+                        </tr>
+                        <tr>
+                            <td>Usability</td>
+                            <td>Responsive Design</td>
+                            <td>Cross-browser, Mobile-friendly</td>
+                            <td><span class="status status-pass">Pass</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion">
+        <div class="container">
+            <h2 class="section-title">Conclusion & Recommendations</h2>
+            
+            <div class="conclusion-content">
+                <div class="conclusion-box">
+                    <h3>Key Findings</h3>
+                    <ul>
+                        <li>The core functional modules (authentication, inventory, and payment) are robust and highly reliable.</li>
+                        <li>Security posture is strong; no critical data exposure vulnerabilities were discovered.</li>
+                        <li>The system successfully handles typical daily traffic loads without performance degradation.</li>
+                        <li>A performance bottleneck was identified in the database search indexing during high-load simulations.</li>
+                    </ul>
+                </div>
+                <div class="conclusion-box">
+                    <h3>Recommendations</h3>
+                    <ul>
+                        <li><strong>Database Optimization:</strong> Implement caching (e.g., Redis) and optimize search queries to resolve the stress test failure.</li>
+                        <li><strong>UI Polish:</strong> Address minor frontend state issues in the shopping cart when users rapidly update quantities.</li>
+                        <li><strong>Automation:</strong> Integrate Selenium test suites into the CI/CD pipeline to ensure regression testing on every deployment.</li>
+                        <li><strong>Accessibility:</strong> Improve screen reader compatibility on the checkout forms to meet full WCAG AA standards.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h2 class="section-title">The QA Team</h2>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="avatar">JD</div>
+                    <h3 class="team-name">Jane Doe</h3>
+                    <p class="team-role">QA Lead</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">JS</div>
+                    <h3 class="team-name">John Smith</h3>
+                    <p class="team-role">Performance Engineer</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">AR</div>
+                    <h3 class="team-name">Alice Rivera</h3>
+                    <p class="team-role">Security Analyst</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">MK</div>
+                    <h3 class="team-name">Mark Klein</h3>
+                    <p class="team-role">Automation Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Functional and Non-Functional Testing of the Agrimart E-Commerce Website</p>
+        <p>&copy; 2026 Agrimart Capstone Project. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
