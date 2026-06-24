@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
 import 'categories_screen.dart';
+import 'cart_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -15,7 +16,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _screens = [
     const HomeScreen(),
     const CategoriesScreen(),
-    const Center(child: Text('My Cart')),
+    const CartScreen(),
     const Center(child: Text('Search')),
   ];
 

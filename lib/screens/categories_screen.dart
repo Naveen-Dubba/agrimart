@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});
 
-  final List<String> categories = const [
-    'BLOWER - MISTBLOWER',
-    'BRUSH CUTTER - WEED CUTTER',
-    'CHAFF CUTTER / SHREDDER',
-    'CHAIN SAW',
-    'EARTH AUGER',
-    'ENGINE',
-    'FOGGER ULV & THERMAL',
-    'GARDEN TOOLS & SPRAYERS',
-    'HARVESTER',
-    'HEDGETRIMMER',
-    'INTERCULTIVATOR/POWER WEEDER',
+  final List<Map<String, String>> categories = const [
+    {'name': 'BLOWER - MISTBLOWER', 'image': 'assets/images/cat_sprayer.png'},
+    {'name': 'BRUSH CUTTER - WEED CUTTER', 'image': 'assets/images/cat_chainsaw.png'},
+    {'name': 'CHAFF CUTTER / SHREDDER', 'image': 'assets/images/cat_engine.png'},
+    {'name': 'CHAIN SAW', 'image': 'assets/images/cat_chainsaw.png'},
+    {'name': 'EARTH AUGER', 'image': 'assets/images/cat_engine.png'},
+    {'name': 'ENGINE', 'image': 'assets/images/cat_engine.png'},
+    {'name': 'FOGGER ULV & THERMAL', 'image': 'assets/images/cat_sprayer.png'},
+    {'name': 'GARDEN TOOLS & SPRAYERS', 'image': 'assets/images/cat_sprayer.png'},
+    {'name': 'HARVESTER', 'image': 'assets/images/cat_chainsaw.png'},
+    {'name': 'HEDGETRIMMER', 'image': 'assets/images/cat_chainsaw.png'},
+    {'name': 'INTERCULTIVATOR/POWER WEEDER', 'image': 'assets/images/cat_engine.png'},
   ];
 
   @override
@@ -36,13 +36,16 @@ class CategoriesScreen extends StatelessWidget {
               width: 50,
               height: 50,
               decoration: BoxDecoration(
-                color: Colors.grey[200],
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(4),
               ),
-              child: const Icon(Icons.precision_manufacturing, color: Colors.grey),
+              child: Image.asset(
+                categories[index]['image']!,
+                fit: BoxFit.contain,
+              ),
             ),
             title: Text(
-              categories[index],
+              categories[index]['name']!,
               style: const TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 14,

@@ -28,15 +28,11 @@ class _SignupScreenState extends State<SignupScreen> {
                     color: const Color(0xCC81C784),
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: const Center(
-                    child: Text(
-                      'ratnagiri\nimpex',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF0D47A1),
-                      ),
+                  child: Center(
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      height: 60,
+                      fit: BoxFit.contain,
                     ),
                   ),
                 ),

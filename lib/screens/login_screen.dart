@@ -21,15 +21,11 @@ class LoginScreen extends StatelessWidget {
                     color: const Color(0xCC81C784),
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: const Center(
-                    child: Text(
-                      'AGRIMART',
-                      style: TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        letterSpacing: 2,
-                      ),
+                  child: Center(
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      height: 80,
+                      fit: BoxFit.contain,
                     ),
                   ),
                 ),

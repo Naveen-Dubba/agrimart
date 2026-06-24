@@ -35,12 +35,14 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Top banner placeholder
-            Container(
+            // Top banner
+            SizedBox(
               height: 120,
               width: double.infinity,
-              color: Colors.grey[300],
-              child: const Center(child: Text('Banner Image')),
+              child: Image.asset(
+                'assets/images/banner.png',
+                fit: BoxFit.cover,
+              ),
             ),
             
             const Padding(
@@ -116,8 +118,11 @@ class HomeScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            child: Center(
-              child: Icon(Icons.image, size: 80, color: Colors.grey[400]),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Center(
+                child: Image.asset('assets/images/product_shears.png', fit: BoxFit.contain),
+              ),
             ),
           ),
           Padding(
