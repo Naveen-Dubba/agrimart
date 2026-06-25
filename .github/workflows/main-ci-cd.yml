@@ -173,3 +173,26 @@ jobs:
   #     - name: Checkout Repository
   #       uses: actions/checkout@v4
   #     ...
+
+  # -----------------------------------------------------
+  # 8. Comprehensive Verification Dashboard
+  # -----------------------------------------------------
+  verify-all:
+    name: Verify All — 300+ Web Frontend, Mobile & Backend Tests
+    needs: [flutter-tests, build-apk]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate Comprehensive Dashboard
+        run: |
+          node .github/scripts/generate_dashboard.js
+          cat .github/scripts/dashboard.md >> $GITHUB_STEP_SUMMARY
+
