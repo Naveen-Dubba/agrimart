@@ -6,7 +6,7 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const AgrimartApp());
 
-    // Verify that the 'AGRIMART' text exists on the login screen
-    expect(find.text('AGRIMART'), findsOneWidget);
+    // Verify that the 'Welcome 🌿' text exists on the login screen
+    expect(find.text('Welcome 🌿'), findsOneWidget);
   });
 }
