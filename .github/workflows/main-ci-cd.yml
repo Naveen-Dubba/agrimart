@@ -1,0 +1,175 @@
+name: Complete CI/CD Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  # -----------------------------------------------------
+  # 1. Run Flutter Tests
+  # -----------------------------------------------------
+  flutter-tests:
+    name: Run Flutter Unit & Widget Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install Flutter Dependencies
+        run: flutter pub get
+
+      - name: Run Flutter Tests
+        run: flutter test
+
+  # -----------------------------------------------------
+  # 2. Build Flutter Web App
+  # -----------------------------------------------------
+  build-flutter-web:
+    name: Build Flutter Web
+    needs: flutter-tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install Flutter Dependencies
+        run: flutter pub get
+
+      - name: Build Flutter Web (Release)
+        # Sets the base URL so that it works correctly on GitHub Pages
+        run: flutter build web --release --base-href "/agrimart/"
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: flutter-web-dist
+          path: build/web/
+          retention-days: 1
+
+  # -----------------------------------------------------
+  # 3. Deploy to GitHub Pages
+  # -----------------------------------------------------
+  deploy-gh-pages:
+    name: Deploy to GitHub Pages
+    needs: build-flutter-web
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://Naveen-Dubba.github.io/agrimart/
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: flutter-web-dist
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+
+  # -----------------------------------------------------
+  # 4. APK Release (Flutter Build)
+  # -----------------------------------------------------
+  build-apk:
+    name: Build Flutter APK
+    needs: flutter-tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install Flutter Dependencies
+        run: flutter pub get
+
+      - name: Build APK (Release)
+        run: flutter build apk --release
+        env:
+          GRADLE_OPTS: "-Xmx4g -Dorg.gradle.daemon=false"
+
+      - name: Upload APK Release
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 14
+
+  # -----------------------------------------------------
+  # 5. Selenium / Web Test Cases Placeholder
+  # -----------------------------------------------------
+  # selenium-e2e-tests:
+  #   name: Selenium E2E Web Tests
+  #   needs: deploy-gh-pages
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v4
+  #     ...
+
+  # -----------------------------------------------------
+  # 6. Appium / App Test Cases Placeholder
+  # -----------------------------------------------------
+  # appium-tests:
+  #   name: Appium Mobile Tests
+  #   needs: build-apk
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v4
+  #     ...
+
+  # -----------------------------------------------------
+  # 7. Load Testing (k6) Placeholder
+  # -----------------------------------------------------
+  # load-testing:
+  #   name: k6 Load Test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v4
+  #     ...
