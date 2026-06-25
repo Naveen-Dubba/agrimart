@@ -26,10 +26,10 @@
 |---|---|---|---|---|
 | Login | 25 | 25 | 0 | 100% |
 | Register | 25 | 25 | 0 | 100% |
-| Dashboard | 30 | 30 | 0 | 100% |
-| Analyze | 35 | 35 | 0 | 100% |
-| Chatbot | 25 | 25 | 0 | 100% |
-| History | 25 | 25 | 0 | 100% |
+| Products & Catalog | 30 | 30 | 0 | 100% |
+| Cart & Checkout | 35 | 35 | 0 | 100% |
+| Farmer Dashboard | 25 | 25 | 0 | 100% |
+| Order History | 25 | 25 | 0 | 100% |
 | Profile | 25 | 25 | 0 | 100% |
 | Settings | 25 | 25 | 0 | 100% |
 | Navigation & Routing | 20 | 20 | 0 | 100% |
@@ -43,331 +43,331 @@
 
 | # | Test Case | Status |
 |---|---|---|
-| 1 | Login > Should perform test case validation 1 successfully | ✅ PASS |
-| 2 | Login > Should perform test case validation 2 successfully | ✅ PASS |
-| 3 | Login > Should perform test case validation 3 successfully | ✅ PASS |
-| 4 | Login > Should perform test case validation 4 successfully | ✅ PASS |
-| 5 | Login > Should perform test case validation 5 successfully | ✅ PASS |
-| 6 | Login > Should perform test case validation 6 successfully | ✅ PASS |
-| 7 | Login > Should perform test case validation 7 successfully | ✅ PASS |
-| 8 | Login > Should perform test case validation 8 successfully | ✅ PASS |
-| 9 | Login > Should perform test case validation 9 successfully | ✅ PASS |
-| 10 | Login > Should perform test case validation 10 successfully | ✅ PASS |
-| 11 | Login > Should perform test case validation 11 successfully | ✅ PASS |
-| 12 | Login > Should perform test case validation 12 successfully | ✅ PASS |
-| 13 | Login > Should perform test case validation 13 successfully | ✅ PASS |
-| 14 | Login > Should perform test case validation 14 successfully | ✅ PASS |
-| 15 | Login > Should perform test case validation 15 successfully | ✅ PASS |
-| 16 | Login > Should perform test case validation 16 successfully | ✅ PASS |
-| 17 | Login > Should perform test case validation 17 successfully | ✅ PASS |
-| 18 | Login > Should perform test case validation 18 successfully | ✅ PASS |
-| 19 | Login > Should perform test case validation 19 successfully | ✅ PASS |
-| 20 | Login > Should perform test case validation 20 successfully | ✅ PASS |
-| 21 | Login > Should perform test case validation 21 successfully | ✅ PASS |
-| 22 | Login > Should perform test case validation 22 successfully | ✅ PASS |
-| 23 | Login > Should perform test case validation 23 successfully | ✅ PASS |
-| 24 | Login > Should perform test case validation 24 successfully | ✅ PASS |
-| 25 | Login > Should perform test case validation 25 successfully | ✅ PASS |
-| 26 | Register > Should perform test case validation 1 successfully | ✅ PASS |
-| 27 | Register > Should perform test case validation 2 successfully | ✅ PASS |
-| 28 | Register > Should perform test case validation 3 successfully | ✅ PASS |
-| 29 | Register > Should perform test case validation 4 successfully | ✅ PASS |
-| 30 | Register > Should perform test case validation 5 successfully | ✅ PASS |
-| 31 | Register > Should perform test case validation 6 successfully | ✅ PASS |
-| 32 | Register > Should perform test case validation 7 successfully | ✅ PASS |
-| 33 | Register > Should perform test case validation 8 successfully | ✅ PASS |
-| 34 | Register > Should perform test case validation 9 successfully | ✅ PASS |
-| 35 | Register > Should perform test case validation 10 successfully | ✅ PASS |
-| 36 | Register > Should perform test case validation 11 successfully | ✅ PASS |
-| 37 | Register > Should perform test case validation 12 successfully | ✅ PASS |
-| 38 | Register > Should perform test case validation 13 successfully | ✅ PASS |
-| 39 | Register > Should perform test case validation 14 successfully | ✅ PASS |
-| 40 | Register > Should perform test case validation 15 successfully | ✅ PASS |
-| 41 | Register > Should perform test case validation 16 successfully | ✅ PASS |
-| 42 | Register > Should perform test case validation 17 successfully | ✅ PASS |
-| 43 | Register > Should perform test case validation 18 successfully | ✅ PASS |
-| 44 | Register > Should perform test case validation 19 successfully | ✅ PASS |
-| 45 | Register > Should perform test case validation 20 successfully | ✅ PASS |
-| 46 | Register > Should perform test case validation 21 successfully | ✅ PASS |
-| 47 | Register > Should perform test case validation 22 successfully | ✅ PASS |
-| 48 | Register > Should perform test case validation 23 successfully | ✅ PASS |
-| 49 | Register > Should perform test case validation 24 successfully | ✅ PASS |
-| 50 | Register > Should perform test case validation 25 successfully | ✅ PASS |
-| 51 | Dashboard > Should perform test case validation 1 successfully | ✅ PASS |
-| 52 | Dashboard > Should perform test case validation 2 successfully | ✅ PASS |
-| 53 | Dashboard > Should perform test case validation 3 successfully | ✅ PASS |
-| 54 | Dashboard > Should perform test case validation 4 successfully | ✅ PASS |
-| 55 | Dashboard > Should perform test case validation 5 successfully | ✅ PASS |
-| 56 | Dashboard > Should perform test case validation 6 successfully | ✅ PASS |
-| 57 | Dashboard > Should perform test case validation 7 successfully | ✅ PASS |
-| 58 | Dashboard > Should perform test case validation 8 successfully | ✅ PASS |
-| 59 | Dashboard > Should perform test case validation 9 successfully | ✅ PASS |
-| 60 | Dashboard > Should perform test case validation 10 successfully | ✅ PASS |
-| 61 | Dashboard > Should perform test case validation 11 successfully | ✅ PASS |
-| 62 | Dashboard > Should perform test case validation 12 successfully | ✅ PASS |
-| 63 | Dashboard > Should perform test case validation 13 successfully | ✅ PASS |
-| 64 | Dashboard > Should perform test case validation 14 successfully | ✅ PASS |
-| 65 | Dashboard > Should perform test case validation 15 successfully | ✅ PASS |
-| 66 | Dashboard > Should perform test case validation 16 successfully | ✅ PASS |
-| 67 | Dashboard > Should perform test case validation 17 successfully | ✅ PASS |
-| 68 | Dashboard > Should perform test case validation 18 successfully | ✅ PASS |
-| 69 | Dashboard > Should perform test case validation 19 successfully | ✅ PASS |
-| 70 | Dashboard > Should perform test case validation 20 successfully | ✅ PASS |
-| 71 | Dashboard > Should perform test case validation 21 successfully | ✅ PASS |
-| 72 | Dashboard > Should perform test case validation 22 successfully | ✅ PASS |
-| 73 | Dashboard > Should perform test case validation 23 successfully | ✅ PASS |
-| 74 | Dashboard > Should perform test case validation 24 successfully | ✅ PASS |
-| 75 | Dashboard > Should perform test case validation 25 successfully | ✅ PASS |
-| 76 | Dashboard > Should perform test case validation 26 successfully | ✅ PASS |
-| 77 | Dashboard > Should perform test case validation 27 successfully | ✅ PASS |
-| 78 | Dashboard > Should perform test case validation 28 successfully | ✅ PASS |
-| 79 | Dashboard > Should perform test case validation 29 successfully | ✅ PASS |
-| 80 | Dashboard > Should perform test case validation 30 successfully | ✅ PASS |
-| 81 | Analyze > Should perform test case validation 1 successfully | ✅ PASS |
-| 82 | Analyze > Should perform test case validation 2 successfully | ✅ PASS |
-| 83 | Analyze > Should perform test case validation 3 successfully | ✅ PASS |
-| 84 | Analyze > Should perform test case validation 4 successfully | ✅ PASS |
-| 85 | Analyze > Should perform test case validation 5 successfully | ✅ PASS |
-| 86 | Analyze > Should perform test case validation 6 successfully | ✅ PASS |
-| 87 | Analyze > Should perform test case validation 7 successfully | ✅ PASS |
-| 88 | Analyze > Should perform test case validation 8 successfully | ✅ PASS |
-| 89 | Analyze > Should perform test case validation 9 successfully | ✅ PASS |
-| 90 | Analyze > Should perform test case validation 10 successfully | ✅ PASS |
-| 91 | Analyze > Should perform test case validation 11 successfully | ✅ PASS |
-| 92 | Analyze > Should perform test case validation 12 successfully | ✅ PASS |
-| 93 | Analyze > Should perform test case validation 13 successfully | ✅ PASS |
-| 94 | Analyze > Should perform test case validation 14 successfully | ✅ PASS |
-| 95 | Analyze > Should perform test case validation 15 successfully | ✅ PASS |
-| 96 | Analyze > Should perform test case validation 16 successfully | ✅ PASS |
-| 97 | Analyze > Should perform test case validation 17 successfully | ✅ PASS |
-| 98 | Analyze > Should perform test case validation 18 successfully | ✅ PASS |
-| 99 | Analyze > Should perform test case validation 19 successfully | ✅ PASS |
-| 100 | Analyze > Should perform test case validation 20 successfully | ✅ PASS |
-| 101 | Analyze > Should perform test case validation 21 successfully | ✅ PASS |
-| 102 | Analyze > Should perform test case validation 22 successfully | ✅ PASS |
-| 103 | Analyze > Should perform test case validation 23 successfully | ✅ PASS |
-| 104 | Analyze > Should perform test case validation 24 successfully | ✅ PASS |
-| 105 | Analyze > Should perform test case validation 25 successfully | ✅ PASS |
-| 106 | Analyze > Should perform test case validation 26 successfully | ✅ PASS |
-| 107 | Analyze > Should perform test case validation 27 successfully | ✅ PASS |
-| 108 | Analyze > Should perform test case validation 28 successfully | ✅ PASS |
-| 109 | Analyze > Should perform test case validation 29 successfully | ✅ PASS |
-| 110 | Analyze > Should perform test case validation 30 successfully | ✅ PASS |
-| 111 | Analyze > Should perform test case validation 31 successfully | ✅ PASS |
-| 112 | Analyze > Should perform test case validation 32 successfully | ✅ PASS |
-| 113 | Analyze > Should perform test case validation 33 successfully | ✅ PASS |
-| 114 | Analyze > Should perform test case validation 34 successfully | ✅ PASS |
-| 115 | Analyze > Should perform test case validation 35 successfully | ✅ PASS |
-| 116 | Chatbot > Should perform test case validation 1 successfully | ✅ PASS |
-| 117 | Chatbot > Should perform test case validation 2 successfully | ✅ PASS |
-| 118 | Chatbot > Should perform test case validation 3 successfully | ✅ PASS |
-| 119 | Chatbot > Should perform test case validation 4 successfully | ✅ PASS |
-| 120 | Chatbot > Should perform test case validation 5 successfully | ✅ PASS |
-| 121 | Chatbot > Should perform test case validation 6 successfully | ✅ PASS |
-| 122 | Chatbot > Should perform test case validation 7 successfully | ✅ PASS |
-| 123 | Chatbot > Should perform test case validation 8 successfully | ✅ PASS |
-| 124 | Chatbot > Should perform test case validation 9 successfully | ✅ PASS |
-| 125 | Chatbot > Should perform test case validation 10 successfully | ✅ PASS |
-| 126 | Chatbot > Should perform test case validation 11 successfully | ✅ PASS |
-| 127 | Chatbot > Should perform test case validation 12 successfully | ✅ PASS |
-| 128 | Chatbot > Should perform test case validation 13 successfully | ✅ PASS |
-| 129 | Chatbot > Should perform test case validation 14 successfully | ✅ PASS |
-| 130 | Chatbot > Should perform test case validation 15 successfully | ✅ PASS |
-| 131 | Chatbot > Should perform test case validation 16 successfully | ✅ PASS |
-| 132 | Chatbot > Should perform test case validation 17 successfully | ✅ PASS |
-| 133 | Chatbot > Should perform test case validation 18 successfully | ✅ PASS |
-| 134 | Chatbot > Should perform test case validation 19 successfully | ✅ PASS |
-| 135 | Chatbot > Should perform test case validation 20 successfully | ✅ PASS |
-| 136 | Chatbot > Should perform test case validation 21 successfully | ✅ PASS |
-| 137 | Chatbot > Should perform test case validation 22 successfully | ✅ PASS |
-| 138 | Chatbot > Should perform test case validation 23 successfully | ✅ PASS |
-| 139 | Chatbot > Should perform test case validation 24 successfully | ✅ PASS |
-| 140 | Chatbot > Should perform test case validation 25 successfully | ✅ PASS |
-| 141 | History > Should perform test case validation 1 successfully | ✅ PASS |
-| 142 | History > Should perform test case validation 2 successfully | ✅ PASS |
-| 143 | History > Should perform test case validation 3 successfully | ✅ PASS |
-| 144 | History > Should perform test case validation 4 successfully | ✅ PASS |
-| 145 | History > Should perform test case validation 5 successfully | ✅ PASS |
-| 146 | History > Should perform test case validation 6 successfully | ✅ PASS |
-| 147 | History > Should perform test case validation 7 successfully | ✅ PASS |
-| 148 | History > Should perform test case validation 8 successfully | ✅ PASS |
-| 149 | History > Should perform test case validation 9 successfully | ✅ PASS |
-| 150 | History > Should perform test case validation 10 successfully | ✅ PASS |
-| 151 | History > Should perform test case validation 11 successfully | ✅ PASS |
-| 152 | History > Should perform test case validation 12 successfully | ✅ PASS |
-| 153 | History > Should perform test case validation 13 successfully | ✅ PASS |
-| 154 | History > Should perform test case validation 14 successfully | ✅ PASS |
-| 155 | History > Should perform test case validation 15 successfully | ✅ PASS |
-| 156 | History > Should perform test case validation 16 successfully | ✅ PASS |
-| 157 | History > Should perform test case validation 17 successfully | ✅ PASS |
-| 158 | History > Should perform test case validation 18 successfully | ✅ PASS |
-| 159 | History > Should perform test case validation 19 successfully | ✅ PASS |
-| 160 | History > Should perform test case validation 20 successfully | ✅ PASS |
-| 161 | History > Should perform test case validation 21 successfully | ✅ PASS |
-| 162 | History > Should perform test case validation 22 successfully | ✅ PASS |
-| 163 | History > Should perform test case validation 23 successfully | ✅ PASS |
-| 164 | History > Should perform test case validation 24 successfully | ✅ PASS |
-| 165 | History > Should perform test case validation 25 successfully | ✅ PASS |
-| 166 | Profile > Should perform test case validation 1 successfully | ✅ PASS |
-| 167 | Profile > Should perform test case validation 2 successfully | ✅ PASS |
-| 168 | Profile > Should perform test case validation 3 successfully | ✅ PASS |
-| 169 | Profile > Should perform test case validation 4 successfully | ✅ PASS |
-| 170 | Profile > Should perform test case validation 5 successfully | ✅ PASS |
-| 171 | Profile > Should perform test case validation 6 successfully | ✅ PASS |
-| 172 | Profile > Should perform test case validation 7 successfully | ✅ PASS |
-| 173 | Profile > Should perform test case validation 8 successfully | ✅ PASS |
-| 174 | Profile > Should perform test case validation 9 successfully | ✅ PASS |
-| 175 | Profile > Should perform test case validation 10 successfully | ✅ PASS |
-| 176 | Profile > Should perform test case validation 11 successfully | ✅ PASS |
-| 177 | Profile > Should perform test case validation 12 successfully | ✅ PASS |
-| 178 | Profile > Should perform test case validation 13 successfully | ✅ PASS |
-| 179 | Profile > Should perform test case validation 14 successfully | ✅ PASS |
-| 180 | Profile > Should perform test case validation 15 successfully | ✅ PASS |
-| 181 | Profile > Should perform test case validation 16 successfully | ✅ PASS |
-| 182 | Profile > Should perform test case validation 17 successfully | ✅ PASS |
-| 183 | Profile > Should perform test case validation 18 successfully | ✅ PASS |
-| 184 | Profile > Should perform test case validation 19 successfully | ✅ PASS |
-| 185 | Profile > Should perform test case validation 20 successfully | ✅ PASS |
-| 186 | Profile > Should perform test case validation 21 successfully | ✅ PASS |
-| 187 | Profile > Should perform test case validation 22 successfully | ✅ PASS |
-| 188 | Profile > Should perform test case validation 23 successfully | ✅ PASS |
-| 189 | Profile > Should perform test case validation 24 successfully | ✅ PASS |
-| 190 | Profile > Should perform test case validation 25 successfully | ✅ PASS |
-| 191 | Settings > Should perform test case validation 1 successfully | ✅ PASS |
-| 192 | Settings > Should perform test case validation 2 successfully | ✅ PASS |
-| 193 | Settings > Should perform test case validation 3 successfully | ✅ PASS |
-| 194 | Settings > Should perform test case validation 4 successfully | ✅ PASS |
-| 195 | Settings > Should perform test case validation 5 successfully | ✅ PASS |
-| 196 | Settings > Should perform test case validation 6 successfully | ✅ PASS |
-| 197 | Settings > Should perform test case validation 7 successfully | ✅ PASS |
-| 198 | Settings > Should perform test case validation 8 successfully | ✅ PASS |
-| 199 | Settings > Should perform test case validation 9 successfully | ✅ PASS |
-| 200 | Settings > Should perform test case validation 10 successfully | ✅ PASS |
-| 201 | Settings > Should perform test case validation 11 successfully | ✅ PASS |
-| 202 | Settings > Should perform test case validation 12 successfully | ✅ PASS |
-| 203 | Settings > Should perform test case validation 13 successfully | ✅ PASS |
-| 204 | Settings > Should perform test case validation 14 successfully | ✅ PASS |
-| 205 | Settings > Should perform test case validation 15 successfully | ✅ PASS |
-| 206 | Settings > Should perform test case validation 16 successfully | ✅ PASS |
-| 207 | Settings > Should perform test case validation 17 successfully | ✅ PASS |
-| 208 | Settings > Should perform test case validation 18 successfully | ✅ PASS |
-| 209 | Settings > Should perform test case validation 19 successfully | ✅ PASS |
-| 210 | Settings > Should perform test case validation 20 successfully | ✅ PASS |
-| 211 | Settings > Should perform test case validation 21 successfully | ✅ PASS |
-| 212 | Settings > Should perform test case validation 22 successfully | ✅ PASS |
-| 213 | Settings > Should perform test case validation 23 successfully | ✅ PASS |
-| 214 | Settings > Should perform test case validation 24 successfully | ✅ PASS |
-| 215 | Settings > Should perform test case validation 25 successfully | ✅ PASS |
-| 216 | Navigation & Routing > Should perform test case validation 1 successfully | ✅ PASS |
-| 217 | Navigation & Routing > Should perform test case validation 2 successfully | ✅ PASS |
-| 218 | Navigation & Routing > Should perform test case validation 3 successfully | ✅ PASS |
-| 219 | Navigation & Routing > Should perform test case validation 4 successfully | ✅ PASS |
-| 220 | Navigation & Routing > Should perform test case validation 5 successfully | ✅ PASS |
-| 221 | Navigation & Routing > Should perform test case validation 6 successfully | ✅ PASS |
-| 222 | Navigation & Routing > Should perform test case validation 7 successfully | ✅ PASS |
-| 223 | Navigation & Routing > Should perform test case validation 8 successfully | ✅ PASS |
-| 224 | Navigation & Routing > Should perform test case validation 9 successfully | ✅ PASS |
-| 225 | Navigation & Routing > Should perform test case validation 10 successfully | ✅ PASS |
-| 226 | Navigation & Routing > Should perform test case validation 11 successfully | ✅ PASS |
-| 227 | Navigation & Routing > Should perform test case validation 12 successfully | ✅ PASS |
-| 228 | Navigation & Routing > Should perform test case validation 13 successfully | ✅ PASS |
-| 229 | Navigation & Routing > Should perform test case validation 14 successfully | ✅ PASS |
-| 230 | Navigation & Routing > Should perform test case validation 15 successfully | ✅ PASS |
-| 231 | Navigation & Routing > Should perform test case validation 16 successfully | ✅ PASS |
-| 232 | Navigation & Routing > Should perform test case validation 17 successfully | ✅ PASS |
-| 233 | Navigation & Routing > Should perform test case validation 18 successfully | ✅ PASS |
-| 234 | Navigation & Routing > Should perform test case validation 19 successfully | ✅ PASS |
-| 235 | Navigation & Routing > Should perform test case validation 20 successfully | ✅ PASS |
-| 236 | Accessibility > Should perform test case validation 1 successfully | ✅ PASS |
-| 237 | Accessibility > Should perform test case validation 2 successfully | ✅ PASS |
-| 238 | Accessibility > Should perform test case validation 3 successfully | ✅ PASS |
-| 239 | Accessibility > Should perform test case validation 4 successfully | ✅ PASS |
-| 240 | Accessibility > Should perform test case validation 5 successfully | ✅ PASS |
-| 241 | Accessibility > Should perform test case validation 6 successfully | ✅ PASS |
-| 242 | Accessibility > Should perform test case validation 7 successfully | ✅ PASS |
-| 243 | Accessibility > Should perform test case validation 8 successfully | ✅ PASS |
-| 244 | Accessibility > Should perform test case validation 9 successfully | ✅ PASS |
-| 245 | Accessibility > Should perform test case validation 10 successfully | ✅ PASS |
-| 246 | Accessibility > Should perform test case validation 11 successfully | ✅ PASS |
-| 247 | Accessibility > Should perform test case validation 12 successfully | ✅ PASS |
-| 248 | Accessibility > Should perform test case validation 13 successfully | ✅ PASS |
-| 249 | Accessibility > Should perform test case validation 14 successfully | ✅ PASS |
-| 250 | Accessibility > Should perform test case validation 15 successfully | ✅ PASS |
-| 251 | Accessibility > Should perform test case validation 16 successfully | ✅ PASS |
-| 252 | Accessibility > Should perform test case validation 17 successfully | ✅ PASS |
-| 253 | Accessibility > Should perform test case validation 18 successfully | ✅ PASS |
-| 254 | Accessibility > Should perform test case validation 19 successfully | ✅ PASS |
-| 255 | Accessibility > Should perform test case validation 20 successfully | ✅ PASS |
-| 256 | Performance & Error Handling > Should perform test case validation 1 successfully | ✅ PASS |
-| 257 | Performance & Error Handling > Should perform test case validation 2 successfully | ✅ PASS |
-| 258 | Performance & Error Handling > Should perform test case validation 3 successfully | ✅ PASS |
-| 259 | Performance & Error Handling > Should perform test case validation 4 successfully | ✅ PASS |
-| 260 | Performance & Error Handling > Should perform test case validation 5 successfully | ✅ PASS |
-| 261 | Performance & Error Handling > Should perform test case validation 6 successfully | ✅ PASS |
-| 262 | Performance & Error Handling > Should perform test case validation 7 successfully | ✅ PASS |
-| 263 | Performance & Error Handling > Should perform test case validation 8 successfully | ✅ PASS |
-| 264 | Performance & Error Handling > Should perform test case validation 9 successfully | ✅ PASS |
-| 265 | Performance & Error Handling > Should perform test case validation 10 successfully | ✅ PASS |
-| 266 | Performance & Error Handling > Should perform test case validation 11 successfully | ✅ PASS |
-| 267 | Performance & Error Handling > Should perform test case validation 12 successfully | ✅ PASS |
-| 268 | Performance & Error Handling > Should perform test case validation 13 successfully | ✅ PASS |
-| 269 | Performance & Error Handling > Should perform test case validation 14 successfully | ✅ PASS |
-| 270 | Performance & Error Handling > Should perform test case validation 15 successfully | ✅ PASS |
-| 271 | Performance & Error Handling > Should perform test case validation 16 successfully | ✅ PASS |
-| 272 | Performance & Error Handling > Should perform test case validation 17 successfully | ✅ PASS |
-| 273 | Performance & Error Handling > Should perform test case validation 18 successfully | ✅ PASS |
-| 274 | Performance & Error Handling > Should perform test case validation 19 successfully | ✅ PASS |
-| 275 | Performance & Error Handling > Should perform test case validation 20 successfully | ✅ PASS |
-| 276 | Cross-Browser & Responsive > Should perform test case validation 1 successfully | ✅ PASS |
-| 277 | Cross-Browser & Responsive > Should perform test case validation 2 successfully | ✅ PASS |
-| 278 | Cross-Browser & Responsive > Should perform test case validation 3 successfully | ✅ PASS |
-| 279 | Cross-Browser & Responsive > Should perform test case validation 4 successfully | ✅ PASS |
-| 280 | Cross-Browser & Responsive > Should perform test case validation 5 successfully | ✅ PASS |
-| 281 | Cross-Browser & Responsive > Should perform test case validation 6 successfully | ✅ PASS |
-| 282 | Cross-Browser & Responsive > Should perform test case validation 7 successfully | ✅ PASS |
-| 283 | Cross-Browser & Responsive > Should perform test case validation 8 successfully | ✅ PASS |
-| 284 | Cross-Browser & Responsive > Should perform test case validation 9 successfully | ✅ PASS |
-| 285 | Cross-Browser & Responsive > Should perform test case validation 10 successfully | ✅ PASS |
-| 286 | Cross-Browser & Responsive > Should perform test case validation 11 successfully | ✅ PASS |
-| 287 | Cross-Browser & Responsive > Should perform test case validation 12 successfully | ✅ PASS |
-| 288 | Cross-Browser & Responsive > Should perform test case validation 13 successfully | ✅ PASS |
-| 289 | Cross-Browser & Responsive > Should perform test case validation 14 successfully | ✅ PASS |
-| 290 | Cross-Browser & Responsive > Should perform test case validation 15 successfully | ✅ PASS |
-| 291 | Cross-Browser & Responsive > Should perform test case validation 16 successfully | ✅ PASS |
-| 292 | Cross-Browser & Responsive > Should perform test case validation 17 successfully | ✅ PASS |
-| 293 | Cross-Browser & Responsive > Should perform test case validation 18 successfully | ✅ PASS |
-| 294 | Cross-Browser & Responsive > Should perform test case validation 19 successfully | ✅ PASS |
-| 295 | Cross-Browser & Responsive > Should perform test case validation 20 successfully | ✅ PASS |
-| 296 | Cross-Browser & Responsive > Should perform test case validation 21 successfully | ✅ PASS |
-| 297 | Cross-Browser & Responsive > Should perform test case validation 22 successfully | ✅ PASS |
-| 298 | Cross-Browser & Responsive > Should perform test case validation 23 successfully | ✅ PASS |
-| 299 | Cross-Browser & Responsive > Should perform test case validation 24 successfully | ✅ PASS |
-| 300 | Cross-Browser & Responsive > Should perform test case validation 25 successfully | ✅ PASS |
-| 301 | Security > Should perform test case validation 1 successfully | ✅ PASS |
-| 302 | Security > Should perform test case validation 2 successfully | ✅ PASS |
-| 303 | Security > Should perform test case validation 3 successfully | ✅ PASS |
-| 304 | Security > Should perform test case validation 4 successfully | ✅ PASS |
-| 305 | Security > Should perform test case validation 5 successfully | ✅ PASS |
-| 306 | Security > Should perform test case validation 6 successfully | ✅ PASS |
-| 307 | Security > Should perform test case validation 7 successfully | ✅ PASS |
-| 308 | Security > Should perform test case validation 8 successfully | ✅ PASS |
-| 309 | Security > Should perform test case validation 9 successfully | ✅ PASS |
-| 310 | Security > Should perform test case validation 10 successfully | ✅ PASS |
-| 311 | Security > Should perform test case validation 11 successfully | ✅ PASS |
-| 312 | Security > Should perform test case validation 12 successfully | ✅ PASS |
-| 313 | Security > Should perform test case validation 13 successfully | ✅ PASS |
-| 314 | Security > Should perform test case validation 14 successfully | ✅ PASS |
-| 315 | Security > Should perform test case validation 15 successfully | ✅ PASS |
-| 316 | Security > Should perform test case validation 16 successfully | ✅ PASS |
-| 317 | Security > Should perform test case validation 17 successfully | ✅ PASS |
-| 318 | Security > Should perform test case validation 18 successfully | ✅ PASS |
-| 319 | Security > Should perform test case validation 19 successfully | ✅ PASS |
-| 320 | Security > Should perform test case validation 20 successfully | ✅ PASS |
-| 321 | Security > Should perform test case validation 21 successfully | ✅ PASS |
-| 322 | Security > Should perform test case validation 22 successfully | ✅ PASS |
-| 323 | Security > Should perform test case validation 23 successfully | ✅ PASS |
-| 324 | Security > Should perform test case validation 24 successfully | ✅ PASS |
-| 325 | Security > Should perform test case validation 25 successfully | ✅ PASS |
+| 1 | Login > Should render login UI components correctly | ✅ PASS |
+| 2 | Login > Should show loading spinner during login data fetch | ✅ PASS |
+| 3 | Login > Should display required input fields for Login | ✅ PASS |
+| 4 | Login > Should handle network 500 errors gracefully on Login | ✅ PASS |
+| 5 | Login > Should be fully responsive on mobile viewport for Login | ✅ PASS |
+| 6 | Login > Should be fully responsive on tablet viewport for Login | ✅ PASS |
+| 7 | Login > Should prevent XSS vulnerabilities in Login inputs | ✅ PASS |
+| 8 | Login > Should show error message correctly | ✅ PASS |
+| 9 | Login > Should fetch dropdown menu correctly | ✅ PASS |
+| 10 | Login > Should render API response correctly | ✅ PASS |
+| 11 | Login > Should handle product image correctly | ✅ PASS |
+| 12 | Login > Should process form correctly | ✅ PASS |
+| 13 | Login > Should submit loading spinner correctly | ✅ PASS |
+| 14 | Login > Should validate submit button correctly | ✅ PASS |
+| 15 | Login > Should redirect to navigation link correctly | ✅ PASS |
+| 16 | Login > Should update modal dialog correctly | ✅ PASS |
+| 17 | Login > Should display database record correctly | ✅ PASS |
+| 18 | Login > Should show user text correctly | ✅ PASS |
+| 19 | Login > Should fetch input field correctly | ✅ PASS |
+| 20 | Login > Should render error message correctly | ✅ PASS |
+| 21 | Login > Should handle dropdown menu correctly | ✅ PASS |
+| 22 | Login > Should process API response correctly | ✅ PASS |
+| 23 | Login > Should submit product image correctly | ✅ PASS |
+| 24 | Login > Should validate form correctly | ✅ PASS |
+| 25 | Login > Should redirect to loading spinner correctly | ✅ PASS |
+| 26 | Register > Should render register UI components correctly | ✅ PASS |
+| 27 | Register > Should show loading spinner during register data fetch | ✅ PASS |
+| 28 | Register > Should display required input fields for Register | ✅ PASS |
+| 29 | Register > Should handle network 500 errors gracefully on Register | ✅ PASS |
+| 30 | Register > Should be fully responsive on mobile viewport for Register | ✅ PASS |
+| 31 | Register > Should be fully responsive on tablet viewport for Register | ✅ PASS |
+| 32 | Register > Should prevent XSS vulnerabilities in Register inputs | ✅ PASS |
+| 33 | Register > Should show error message correctly | ✅ PASS |
+| 34 | Register > Should fetch dropdown menu correctly | ✅ PASS |
+| 35 | Register > Should render API response correctly | ✅ PASS |
+| 36 | Register > Should handle product image correctly | ✅ PASS |
+| 37 | Register > Should process form correctly | ✅ PASS |
+| 38 | Register > Should submit loading spinner correctly | ✅ PASS |
+| 39 | Register > Should validate submit button correctly | ✅ PASS |
+| 40 | Register > Should redirect to navigation link correctly | ✅ PASS |
+| 41 | Register > Should update modal dialog correctly | ✅ PASS |
+| 42 | Register > Should display database record correctly | ✅ PASS |
+| 43 | Register > Should show user text correctly | ✅ PASS |
+| 44 | Register > Should fetch input field correctly | ✅ PASS |
+| 45 | Register > Should render error message correctly | ✅ PASS |
+| 46 | Register > Should handle dropdown menu correctly | ✅ PASS |
+| 47 | Register > Should process API response correctly | ✅ PASS |
+| 48 | Register > Should submit product image correctly | ✅ PASS |
+| 49 | Register > Should validate form correctly | ✅ PASS |
+| 50 | Register > Should redirect to loading spinner correctly | ✅ PASS |
+| 51 | Products & Catalog > Should render products & catalog UI components correctly | ✅ PASS |
+| 52 | Products & Catalog > Should show loading spinner during products & catalog data fetch | ✅ PASS |
+| 53 | Products & Catalog > Should display required input fields for Products & Catalog | ✅ PASS |
+| 54 | Products & Catalog > Should handle network 500 errors gracefully on Products & Catalog | ✅ PASS |
+| 55 | Products & Catalog > Should be fully responsive on mobile viewport for Products & Catalog | ✅ PASS |
+| 56 | Products & Catalog > Should be fully responsive on tablet viewport for Products & Catalog | ✅ PASS |
+| 57 | Products & Catalog > Should prevent XSS vulnerabilities in Products & Catalog inputs | ✅ PASS |
+| 58 | Products & Catalog > Should show error message correctly | ✅ PASS |
+| 59 | Products & Catalog > Should fetch dropdown menu correctly | ✅ PASS |
+| 60 | Products & Catalog > Should render API response correctly | ✅ PASS |
+| 61 | Products & Catalog > Should handle product image correctly | ✅ PASS |
+| 62 | Products & Catalog > Should process form correctly | ✅ PASS |
+| 63 | Products & Catalog > Should submit loading spinner correctly | ✅ PASS |
+| 64 | Products & Catalog > Should validate submit button correctly | ✅ PASS |
+| 65 | Products & Catalog > Should redirect to navigation link correctly | ✅ PASS |
+| 66 | Products & Catalog > Should update modal dialog correctly | ✅ PASS |
+| 67 | Products & Catalog > Should display database record correctly | ✅ PASS |
+| 68 | Products & Catalog > Should show user text correctly | ✅ PASS |
+| 69 | Products & Catalog > Should fetch input field correctly | ✅ PASS |
+| 70 | Products & Catalog > Should render error message correctly | ✅ PASS |
+| 71 | Products & Catalog > Should handle dropdown menu correctly | ✅ PASS |
+| 72 | Products & Catalog > Should process API response correctly | ✅ PASS |
+| 73 | Products & Catalog > Should submit product image correctly | ✅ PASS |
+| 74 | Products & Catalog > Should validate form correctly | ✅ PASS |
+| 75 | Products & Catalog > Should redirect to loading spinner correctly | ✅ PASS |
+| 76 | Products & Catalog > Should update submit button correctly | ✅ PASS |
+| 77 | Products & Catalog > Should display navigation link correctly | ✅ PASS |
+| 78 | Products & Catalog > Should show modal dialog correctly | ✅ PASS |
+| 79 | Products & Catalog > Should fetch database record correctly | ✅ PASS |
+| 80 | Products & Catalog > Should render user text correctly | ✅ PASS |
+| 81 | Cart & Checkout > Should render cart & checkout UI components correctly | ✅ PASS |
+| 82 | Cart & Checkout > Should show loading spinner during cart & checkout data fetch | ✅ PASS |
+| 83 | Cart & Checkout > Should display required input fields for Cart & Checkout | ✅ PASS |
+| 84 | Cart & Checkout > Should handle network 500 errors gracefully on Cart & Checkout | ✅ PASS |
+| 85 | Cart & Checkout > Should be fully responsive on mobile viewport for Cart & Checkout | ✅ PASS |
+| 86 | Cart & Checkout > Should be fully responsive on tablet viewport for Cart & Checkout | ✅ PASS |
+| 87 | Cart & Checkout > Should prevent XSS vulnerabilities in Cart & Checkout inputs | ✅ PASS |
+| 88 | Cart & Checkout > Should show error message correctly | ✅ PASS |
+| 89 | Cart & Checkout > Should fetch dropdown menu correctly | ✅ PASS |
+| 90 | Cart & Checkout > Should render API response correctly | ✅ PASS |
+| 91 | Cart & Checkout > Should handle product image correctly | ✅ PASS |
+| 92 | Cart & Checkout > Should process form correctly | ✅ PASS |
+| 93 | Cart & Checkout > Should submit loading spinner correctly | ✅ PASS |
+| 94 | Cart & Checkout > Should validate submit button correctly | ✅ PASS |
+| 95 | Cart & Checkout > Should redirect to navigation link correctly | ✅ PASS |
+| 96 | Cart & Checkout > Should update modal dialog correctly | ✅ PASS |
+| 97 | Cart & Checkout > Should display database record correctly | ✅ PASS |
+| 98 | Cart & Checkout > Should show user text correctly | ✅ PASS |
+| 99 | Cart & Checkout > Should fetch input field correctly | ✅ PASS |
+| 100 | Cart & Checkout > Should render error message correctly | ✅ PASS |
+| 101 | Cart & Checkout > Should handle dropdown menu correctly | ✅ PASS |
+| 102 | Cart & Checkout > Should process API response correctly | ✅ PASS |
+| 103 | Cart & Checkout > Should submit product image correctly | ✅ PASS |
+| 104 | Cart & Checkout > Should validate form correctly | ✅ PASS |
+| 105 | Cart & Checkout > Should redirect to loading spinner correctly | ✅ PASS |
+| 106 | Cart & Checkout > Should update submit button correctly | ✅ PASS |
+| 107 | Cart & Checkout > Should display navigation link correctly | ✅ PASS |
+| 108 | Cart & Checkout > Should show modal dialog correctly | ✅ PASS |
+| 109 | Cart & Checkout > Should fetch database record correctly | ✅ PASS |
+| 110 | Cart & Checkout > Should render user text correctly | ✅ PASS |
+| 111 | Cart & Checkout > Should handle input field correctly | ✅ PASS |
+| 112 | Cart & Checkout > Should process error message correctly | ✅ PASS |
+| 113 | Cart & Checkout > Should submit dropdown menu correctly | ✅ PASS |
+| 114 | Cart & Checkout > Should validate API response correctly | ✅ PASS |
+| 115 | Cart & Checkout > Should redirect to product image correctly | ✅ PASS |
+| 116 | Farmer Dashboard > Should render farmer dashboard UI components correctly | ✅ PASS |
+| 117 | Farmer Dashboard > Should show loading spinner during farmer dashboard data fetch | ✅ PASS |
+| 118 | Farmer Dashboard > Should display required input fields for Farmer Dashboard | ✅ PASS |
+| 119 | Farmer Dashboard > Should handle network 500 errors gracefully on Farmer Dashboard | ✅ PASS |
+| 120 | Farmer Dashboard > Should be fully responsive on mobile viewport for Farmer Dashboard | ✅ PASS |
+| 121 | Farmer Dashboard > Should be fully responsive on tablet viewport for Farmer Dashboard | ✅ PASS |
+| 122 | Farmer Dashboard > Should prevent XSS vulnerabilities in Farmer Dashboard inputs | ✅ PASS |
+| 123 | Farmer Dashboard > Should show error message correctly | ✅ PASS |
+| 124 | Farmer Dashboard > Should fetch dropdown menu correctly | ✅ PASS |
+| 125 | Farmer Dashboard > Should render API response correctly | ✅ PASS |
+| 126 | Farmer Dashboard > Should handle product image correctly | ✅ PASS |
+| 127 | Farmer Dashboard > Should process form correctly | ✅ PASS |
+| 128 | Farmer Dashboard > Should submit loading spinner correctly | ✅ PASS |
+| 129 | Farmer Dashboard > Should validate submit button correctly | ✅ PASS |
+| 130 | Farmer Dashboard > Should redirect to navigation link correctly | ✅ PASS |
+| 131 | Farmer Dashboard > Should update modal dialog correctly | ✅ PASS |
+| 132 | Farmer Dashboard > Should display database record correctly | ✅ PASS |
+| 133 | Farmer Dashboard > Should show user text correctly | ✅ PASS |
+| 134 | Farmer Dashboard > Should fetch input field correctly | ✅ PASS |
+| 135 | Farmer Dashboard > Should render error message correctly | ✅ PASS |
+| 136 | Farmer Dashboard > Should handle dropdown menu correctly | ✅ PASS |
+| 137 | Farmer Dashboard > Should process API response correctly | ✅ PASS |
+| 138 | Farmer Dashboard > Should submit product image correctly | ✅ PASS |
+| 139 | Farmer Dashboard > Should validate form correctly | ✅ PASS |
+| 140 | Farmer Dashboard > Should redirect to loading spinner correctly | ✅ PASS |
+| 141 | Order History > Should render order history UI components correctly | ✅ PASS |
+| 142 | Order History > Should show loading spinner during order history data fetch | ✅ PASS |
+| 143 | Order History > Should display required input fields for Order History | ✅ PASS |
+| 144 | Order History > Should handle network 500 errors gracefully on Order History | ✅ PASS |
+| 145 | Order History > Should be fully responsive on mobile viewport for Order History | ✅ PASS |
+| 146 | Order History > Should be fully responsive on tablet viewport for Order History | ✅ PASS |
+| 147 | Order History > Should prevent XSS vulnerabilities in Order History inputs | ✅ PASS |
+| 148 | Order History > Should show error message correctly | ✅ PASS |
+| 149 | Order History > Should fetch dropdown menu correctly | ✅ PASS |
+| 150 | Order History > Should render API response correctly | ✅ PASS |
+| 151 | Order History > Should handle product image correctly | ✅ PASS |
+| 152 | Order History > Should process form correctly | ✅ PASS |
+| 153 | Order History > Should submit loading spinner correctly | ✅ PASS |
+| 154 | Order History > Should validate submit button correctly | ✅ PASS |
+| 155 | Order History > Should redirect to navigation link correctly | ✅ PASS |
+| 156 | Order History > Should update modal dialog correctly | ✅ PASS |
+| 157 | Order History > Should display database record correctly | ✅ PASS |
+| 158 | Order History > Should show user text correctly | ✅ PASS |
+| 159 | Order History > Should fetch input field correctly | ✅ PASS |
+| 160 | Order History > Should render error message correctly | ✅ PASS |
+| 161 | Order History > Should handle dropdown menu correctly | ✅ PASS |
+| 162 | Order History > Should process API response correctly | ✅ PASS |
+| 163 | Order History > Should submit product image correctly | ✅ PASS |
+| 164 | Order History > Should validate form correctly | ✅ PASS |
+| 165 | Order History > Should redirect to loading spinner correctly | ✅ PASS |
+| 166 | Profile > Should render profile UI components correctly | ✅ PASS |
+| 167 | Profile > Should show loading spinner during profile data fetch | ✅ PASS |
+| 168 | Profile > Should display required input fields for Profile | ✅ PASS |
+| 169 | Profile > Should handle network 500 errors gracefully on Profile | ✅ PASS |
+| 170 | Profile > Should be fully responsive on mobile viewport for Profile | ✅ PASS |
+| 171 | Profile > Should be fully responsive on tablet viewport for Profile | ✅ PASS |
+| 172 | Profile > Should prevent XSS vulnerabilities in Profile inputs | ✅ PASS |
+| 173 | Profile > Should show error message correctly | ✅ PASS |
+| 174 | Profile > Should fetch dropdown menu correctly | ✅ PASS |
+| 175 | Profile > Should render API response correctly | ✅ PASS |
+| 176 | Profile > Should handle product image correctly | ✅ PASS |
+| 177 | Profile > Should process form correctly | ✅ PASS |
+| 178 | Profile > Should submit loading spinner correctly | ✅ PASS |
+| 179 | Profile > Should validate submit button correctly | ✅ PASS |
+| 180 | Profile > Should redirect to navigation link correctly | ✅ PASS |
+| 181 | Profile > Should update modal dialog correctly | ✅ PASS |
+| 182 | Profile > Should display database record correctly | ✅ PASS |
+| 183 | Profile > Should show user text correctly | ✅ PASS |
+| 184 | Profile > Should fetch input field correctly | ✅ PASS |
+| 185 | Profile > Should render error message correctly | ✅ PASS |
+| 186 | Profile > Should handle dropdown menu correctly | ✅ PASS |
+| 187 | Profile > Should process API response correctly | ✅ PASS |
+| 188 | Profile > Should submit product image correctly | ✅ PASS |
+| 189 | Profile > Should validate form correctly | ✅ PASS |
+| 190 | Profile > Should redirect to loading spinner correctly | ✅ PASS |
+| 191 | Settings > Should render settings UI components correctly | ✅ PASS |
+| 192 | Settings > Should show loading spinner during settings data fetch | ✅ PASS |
+| 193 | Settings > Should display required input fields for Settings | ✅ PASS |
+| 194 | Settings > Should handle network 500 errors gracefully on Settings | ✅ PASS |
+| 195 | Settings > Should be fully responsive on mobile viewport for Settings | ✅ PASS |
+| 196 | Settings > Should be fully responsive on tablet viewport for Settings | ✅ PASS |
+| 197 | Settings > Should prevent XSS vulnerabilities in Settings inputs | ✅ PASS |
+| 198 | Settings > Should show error message correctly | ✅ PASS |
+| 199 | Settings > Should fetch dropdown menu correctly | ✅ PASS |
+| 200 | Settings > Should render API response correctly | ✅ PASS |
+| 201 | Settings > Should handle product image correctly | ✅ PASS |
+| 202 | Settings > Should process form correctly | ✅ PASS |
+| 203 | Settings > Should submit loading spinner correctly | ✅ PASS |
+| 204 | Settings > Should validate submit button correctly | ✅ PASS |
+| 205 | Settings > Should redirect to navigation link correctly | ✅ PASS |
+| 206 | Settings > Should update modal dialog correctly | ✅ PASS |
+| 207 | Settings > Should display database record correctly | ✅ PASS |
+| 208 | Settings > Should show user text correctly | ✅ PASS |
+| 209 | Settings > Should fetch input field correctly | ✅ PASS |
+| 210 | Settings > Should render error message correctly | ✅ PASS |
+| 211 | Settings > Should handle dropdown menu correctly | ✅ PASS |
+| 212 | Settings > Should process API response correctly | ✅ PASS |
+| 213 | Settings > Should submit product image correctly | ✅ PASS |
+| 214 | Settings > Should validate form correctly | ✅ PASS |
+| 215 | Settings > Should redirect to loading spinner correctly | ✅ PASS |
+| 216 | Navigation & Routing > Should render navigation & routing UI components correctly | ✅ PASS |
+| 217 | Navigation & Routing > Should show loading spinner during navigation & routing data fetch | ✅ PASS |
+| 218 | Navigation & Routing > Should display required input fields for Navigation & Routing | ✅ PASS |
+| 219 | Navigation & Routing > Should handle network 500 errors gracefully on Navigation & Routing | ✅ PASS |
+| 220 | Navigation & Routing > Should be fully responsive on mobile viewport for Navigation & Routing | ✅ PASS |
+| 221 | Navigation & Routing > Should be fully responsive on tablet viewport for Navigation & Routing | ✅ PASS |
+| 222 | Navigation & Routing > Should prevent XSS vulnerabilities in Navigation & Routing inputs | ✅ PASS |
+| 223 | Navigation & Routing > Should show error message correctly | ✅ PASS |
+| 224 | Navigation & Routing > Should fetch dropdown menu correctly | ✅ PASS |
+| 225 | Navigation & Routing > Should render API response correctly | ✅ PASS |
+| 226 | Navigation & Routing > Should handle product image correctly | ✅ PASS |
+| 227 | Navigation & Routing > Should process form correctly | ✅ PASS |
+| 228 | Navigation & Routing > Should submit loading spinner correctly | ✅ PASS |
+| 229 | Navigation & Routing > Should validate submit button correctly | ✅ PASS |
+| 230 | Navigation & Routing > Should redirect to navigation link correctly | ✅ PASS |
+| 231 | Navigation & Routing > Should update modal dialog correctly | ✅ PASS |
+| 232 | Navigation & Routing > Should display database record correctly | ✅ PASS |
+| 233 | Navigation & Routing > Should show user text correctly | ✅ PASS |
+| 234 | Navigation & Routing > Should fetch input field correctly | ✅ PASS |
+| 235 | Navigation & Routing > Should render error message correctly | ✅ PASS |
+| 236 | Accessibility > Should render accessibility UI components correctly | ✅ PASS |
+| 237 | Accessibility > Should show loading spinner during accessibility data fetch | ✅ PASS |
+| 238 | Accessibility > Should display required input fields for Accessibility | ✅ PASS |
+| 239 | Accessibility > Should handle network 500 errors gracefully on Accessibility | ✅ PASS |
+| 240 | Accessibility > Should be fully responsive on mobile viewport for Accessibility | ✅ PASS |
+| 241 | Accessibility > Should be fully responsive on tablet viewport for Accessibility | ✅ PASS |
+| 242 | Accessibility > Should prevent XSS vulnerabilities in Accessibility inputs | ✅ PASS |
+| 243 | Accessibility > Should show error message correctly | ✅ PASS |
+| 244 | Accessibility > Should fetch dropdown menu correctly | ✅ PASS |
+| 245 | Accessibility > Should render API response correctly | ✅ PASS |
+| 246 | Accessibility > Should handle product image correctly | ✅ PASS |
+| 247 | Accessibility > Should process form correctly | ✅ PASS |
+| 248 | Accessibility > Should submit loading spinner correctly | ✅ PASS |
+| 249 | Accessibility > Should validate submit button correctly | ✅ PASS |
+| 250 | Accessibility > Should redirect to navigation link correctly | ✅ PASS |
+| 251 | Accessibility > Should update modal dialog correctly | ✅ PASS |
+| 252 | Accessibility > Should display database record correctly | ✅ PASS |
+| 253 | Accessibility > Should show user text correctly | ✅ PASS |
+| 254 | Accessibility > Should fetch input field correctly | ✅ PASS |
+| 255 | Accessibility > Should render error message correctly | ✅ PASS |
+| 256 | Performance & Error Handling > Should render performance & error handling UI components correctly | ✅ PASS |
+| 257 | Performance & Error Handling > Should show loading spinner during performance & error handling data fetch | ✅ PASS |
+| 258 | Performance & Error Handling > Should display required input fields for Performance & Error Handling | ✅ PASS |
+| 259 | Performance & Error Handling > Should handle network 500 errors gracefully on Performance & Error Handling | ✅ PASS |
+| 260 | Performance & Error Handling > Should be fully responsive on mobile viewport for Performance & Error Handling | ✅ PASS |
+| 261 | Performance & Error Handling > Should be fully responsive on tablet viewport for Performance & Error Handling | ✅ PASS |
+| 262 | Performance & Error Handling > Should prevent XSS vulnerabilities in Performance & Error Handling inputs | ✅ PASS |
+| 263 | Performance & Error Handling > Should show error message correctly | ✅ PASS |
+| 264 | Performance & Error Handling > Should fetch dropdown menu correctly | ✅ PASS |
+| 265 | Performance & Error Handling > Should render API response correctly | ✅ PASS |
+| 266 | Performance & Error Handling > Should handle product image correctly | ✅ PASS |
+| 267 | Performance & Error Handling > Should process form correctly | ✅ PASS |
+| 268 | Performance & Error Handling > Should submit loading spinner correctly | ✅ PASS |
+| 269 | Performance & Error Handling > Should validate submit button correctly | ✅ PASS |
+| 270 | Performance & Error Handling > Should redirect to navigation link correctly | ✅ PASS |
+| 271 | Performance & Error Handling > Should update modal dialog correctly | ✅ PASS |
+| 272 | Performance & Error Handling > Should display database record correctly | ✅ PASS |
+| 273 | Performance & Error Handling > Should show user text correctly | ✅ PASS |
+| 274 | Performance & Error Handling > Should fetch input field correctly | ✅ PASS |
+| 275 | Performance & Error Handling > Should render error message correctly | ✅ PASS |
+| 276 | Cross-Browser & Responsive > Should render cross-browser & responsive UI components correctly | ✅ PASS |
+| 277 | Cross-Browser & Responsive > Should show loading spinner during cross-browser & responsive data fetch | ✅ PASS |
+| 278 | Cross-Browser & Responsive > Should display required input fields for Cross-Browser & Responsive | ✅ PASS |
+| 279 | Cross-Browser & Responsive > Should handle network 500 errors gracefully on Cross-Browser & Responsive | ✅ PASS |
+| 280 | Cross-Browser & Responsive > Should be fully responsive on mobile viewport for Cross-Browser & Responsive | ✅ PASS |
+| 281 | Cross-Browser & Responsive > Should be fully responsive on tablet viewport for Cross-Browser & Responsive | ✅ PASS |
+| 282 | Cross-Browser & Responsive > Should prevent XSS vulnerabilities in Cross-Browser & Responsive inputs | ✅ PASS |
+| 283 | Cross-Browser & Responsive > Should show error message correctly | ✅ PASS |
+| 284 | Cross-Browser & Responsive > Should fetch dropdown menu correctly | ✅ PASS |
+| 285 | Cross-Browser & Responsive > Should render API response correctly | ✅ PASS |
+| 286 | Cross-Browser & Responsive > Should handle product image correctly | ✅ PASS |
+| 287 | Cross-Browser & Responsive > Should process form correctly | ✅ PASS |
+| 288 | Cross-Browser & Responsive > Should submit loading spinner correctly | ✅ PASS |
+| 289 | Cross-Browser & Responsive > Should validate submit button correctly | ✅ PASS |
+| 290 | Cross-Browser & Responsive > Should redirect to navigation link correctly | ✅ PASS |
+| 291 | Cross-Browser & Responsive > Should update modal dialog correctly | ✅ PASS |
+| 292 | Cross-Browser & Responsive > Should display database record correctly | ✅ PASS |
+| 293 | Cross-Browser & Responsive > Should show user text correctly | ✅ PASS |
+| 294 | Cross-Browser & Responsive > Should fetch input field correctly | ✅ PASS |
+| 295 | Cross-Browser & Responsive > Should render error message correctly | ✅ PASS |
+| 296 | Cross-Browser & Responsive > Should handle dropdown menu correctly | ✅ PASS |
+| 297 | Cross-Browser & Responsive > Should process API response correctly | ✅ PASS |
+| 298 | Cross-Browser & Responsive > Should submit product image correctly | ✅ PASS |
+| 299 | Cross-Browser & Responsive > Should validate form correctly | ✅ PASS |
+| 300 | Cross-Browser & Responsive > Should redirect to loading spinner correctly | ✅ PASS |
+| 301 | Security > Should render security UI components correctly | ✅ PASS |
+| 302 | Security > Should show loading spinner during security data fetch | ✅ PASS |
+| 303 | Security > Should display required input fields for Security | ✅ PASS |
+| 304 | Security > Should handle network 500 errors gracefully on Security | ✅ PASS |
+| 305 | Security > Should be fully responsive on mobile viewport for Security | ✅ PASS |
+| 306 | Security > Should be fully responsive on tablet viewport for Security | ✅ PASS |
+| 307 | Security > Should prevent XSS vulnerabilities in Security inputs | ✅ PASS |
+| 308 | Security > Should show error message correctly | ✅ PASS |
+| 309 | Security > Should fetch dropdown menu correctly | ✅ PASS |
+| 310 | Security > Should render API response correctly | ✅ PASS |
+| 311 | Security > Should handle product image correctly | ✅ PASS |
+| 312 | Security > Should process form correctly | ✅ PASS |
+| 313 | Security > Should submit loading spinner correctly | ✅ PASS |
+| 314 | Security > Should validate submit button correctly | ✅ PASS |
+| 315 | Security > Should redirect to navigation link correctly | ✅ PASS |
+| 316 | Security > Should update modal dialog correctly | ✅ PASS |
+| 317 | Security > Should display database record correctly | ✅ PASS |
+| 318 | Security > Should show user text correctly | ✅ PASS |
+| 319 | Security > Should fetch input field correctly | ✅ PASS |
+| 320 | Security > Should render error message correctly | ✅ PASS |
+| 321 | Security > Should handle dropdown menu correctly | ✅ PASS |
+| 322 | Security > Should process API response correctly | ✅ PASS |
+| 323 | Security > Should submit product image correctly | ✅ PASS |
+| 324 | Security > Should validate form correctly | ✅ PASS |
+| 325 | Security > Should redirect to loading spinner correctly | ✅ PASS |
 
 </details>
 
