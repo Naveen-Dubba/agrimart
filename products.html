@@ -83,72 +83,14 @@
     <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
         <h1 class="text-4xl font-bold text-gray-900 mb-8">All Products</h1>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            <!-- Product 1 -->
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col">
-                <div class="p-4 bg-white flex justify-center items-center h-48">
-                    <i class="fa-solid fa-image text-6xl text-gray-300"></i>
-                </div>
-                <div class="p-4 border-t border-gray-100 flex-1 flex flex-col">
-                    <h4 class="font-bold text-gray-800 leading-tight mb-2 flex-1 hover:text-agrigreen cursor-pointer">AM - Deep Drip Irrigation Stakes (1 BOX OF 20 PIECES)</h4>
-                    <p class="text-xs text-gray-500 mb-3">RIPL Code: <span class="font-bold">RIPL028696</span></p>
-                    <div class="mb-4">
-                        <span class="text-xs text-gray-500 block">MRP (Inclusive of all taxes)</span>
-                        <span class="text-xl font-bold text-agrigreen">₹ 1,660.00</span>
-                    </div>
-                    <a href="cart.html" class="block text-center w-full bg-agrigreen text-white font-bold py-2 rounded shadow-md hover:bg-green-800 transition">BUY NOW</a>
-                </div>
-            </div>
+        <!-- Loading Spinner -->
+        <div id="loading" class="text-center py-10 text-gray-500">
+            <i class="fa-solid fa-spinner fa-spin text-4xl mb-4"></i>
+            <p>Loading catalog from SQLite database...</p>
+        </div>
 
-            <!-- Product 2 -->
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col">
-                <div class="p-4 bg-white flex justify-center items-center h-48">
-                    <i class="fa-solid fa-image text-6xl text-gray-300"></i>
-                </div>
-                <div class="p-4 border-t border-gray-100 flex-1 flex flex-col">
-                    <h4 class="font-bold text-gray-800 leading-tight mb-2 flex-1 hover:text-agrigreen cursor-pointer">AM-22338 Pruning Shears</h4>
-                    <p class="text-xs text-gray-500 mb-3">RIPL Code: <span class="font-bold">DBT24068</span></p>
-                    <div class="mb-4">
-                        <span class="text-xs text-gray-500 block">MRP (Inclusive of all taxes)</span>
-                        <span class="text-xl font-bold text-agrigreen">₹ 1,795.00</span>
-                    </div>
-                    <a href="cart.html" class="block text-center w-full bg-agrigreen text-white font-bold py-2 rounded shadow-md hover:bg-green-800 transition">BUY NOW</a>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col">
-                <div class="p-4 bg-white flex justify-center items-center h-48">
-                    <i class="fa-solid fa-image text-6xl text-gray-300"></i>
-                </div>
-                <div class="p-4 border-t border-gray-100 flex-1 flex flex-col">
-                    <h4 class="font-bold text-gray-800 leading-tight mb-2 flex-1 hover:text-agrigreen cursor-pointer">AM-MVS-1P AGRIMATE MANUAL VERTICLE SEEDER</h4>
-                    <p class="text-xs text-gray-500 mb-3">RIPL Code: <span class="font-bold">RIPL036747</span></p>
-                    <div class="mb-4">
-                        <span class="text-xs text-gray-500 block">MRP (Inclusive of all taxes)</span>
-                        <span class="text-xl font-bold text-agrigreen">₹ 1,840.00</span>
-                    </div>
-                    <a href="cart.html" class="block text-center w-full bg-agrigreen text-white font-bold py-2 rounded shadow-md hover:bg-green-800 transition">BUY NOW</a>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col">
-                <div class="p-4 bg-white flex justify-center items-center h-48">
-                    <i class="fa-solid fa-image text-6xl text-gray-300"></i>
-                </div>
-                <div class="p-4 border-t border-gray-100 flex-1 flex flex-col">
-                    <h4 class="font-bold text-gray-800 leading-tight mb-2 flex-1 hover:text-agrigreen cursor-pointer">OM PROSINT2EVO SYNTHETIC-2T-OIL</h4>
-                    <p class="text-xs text-gray-500 mb-3">RIPL Code: <span class="font-bold">RIPL037653</span></p>
-                    <div class="mb-4">
-                        <span class="text-xs text-gray-500 block">MRP (Inclusive of all taxes)</span>
-                        <span class="text-xl font-bold text-agrigreen">₹ 8,400.00</span>
-                    </div>
-                    <a href="cart.html" class="block text-center w-full bg-agrigreen text-white font-bold py-2 rounded shadow-md hover:bg-green-800 transition">BUY NOW</a>
-                </div>
-            </div>
-            
-            <!-- Additional Products can go here -->
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Dynamic Products will be injected here -->
         </div>
     </main>
 
@@ -159,5 +101,45 @@
             <p>&copy; 2026 Agrimart. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript to Fetch Products -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/api/products')
+                .then(response => response.json())
+                .then(products => {
+                    const grid = document.getElementById('product-grid');
+                    const loading = document.getElementById('loading');
+                    
+                    loading.style.display = 'none';
+                    grid.innerHTML = ''; // Clear empty grid
+                    
+                    products.forEach(product => {
+                        const card = `
+                            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col">
+                                <div class="p-4 bg-white flex justify-center items-center h-48">
+                                    <img src="${product.image_url}" alt="${product.name}" class="max-h-full max-w-full object-contain">
+                                </div>
+                                <div class="p-4 border-t border-gray-100 flex-1 flex flex-col">
+                                    <h4 class="font-bold text-gray-800 leading-tight mb-2 flex-1 hover:text-agrigreen cursor-pointer">${product.name}</h4>
+                                    <p class="text-xs text-gray-500 mb-3">RIPL Code: <span class="font-bold">${product.code}</span></p>
+                                    <div class="mb-4">
+                                        <span class="text-xs text-gray-500 block">MRP (Inclusive of all taxes)</span>
+                                        <span class="text-xl font-bold text-agrigreen">₹ ${product.price.toFixed(2)}</span>
+                                    </div>
+                                    <a href="cart.html" class="block text-center w-full bg-agrigreen text-white font-bold py-2 rounded shadow-md hover:bg-green-800 transition">BUY NOW</a>
+                                </div>
+                            </div>
+                        `;
+                        grid.innerHTML += card;
+                    });
+                })
+                .catch(error => {
+                    document.getElementById('loading').innerHTML = '<p class="text-red-500">Failed to load products. Is the server running?</p>';
+                    console.error('Error fetching products:', error);
+                });
+        });
+    </script>
+<script src="auth.js"></script>
 </body>
 </html>
